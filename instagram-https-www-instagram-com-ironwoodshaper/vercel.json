@@ -2,37 +2,26 @@
   "version": 2,
   "cleanUrls": true,
   "trailingSlash": false,
-  "rewrites": [
+  "routes": [
     {
-      "source": "/",
-      "destination": "/outputs/index.html"
+      "src": "^/$",
+      "dest": "/outputs/index.html"
     },
     {
-      "source": "/styles.css",
-      "destination": "/outputs/styles.css"
+      "src": "^/(styles\\.css|script\\.js)$",
+      "dest": "/outputs/$1"
     },
     {
-      "source": "/script.js",
-      "destination": "/outputs/script.js"
+      "src": "^/assets/(.*)$",
+      "dest": "/outputs/assets/$1"
     },
     {
-      "source": "/assets/:path*",
-      "destination": "/outputs/assets/:path*"
+      "src": "^/data/(.*)$",
+      "dest": "/outputs/data/$1"
     },
     {
-      "source": "/data/:path*",
-      "destination": "/outputs/data/:path*"
-    }
-  ],
-  "headers": [
-    {
-      "source": "/assets/:path*",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
-        }
-      ]
+      "src": "^/api/instagram$",
+      "dest": "/api/instagram.js"
     }
   ]
 }
