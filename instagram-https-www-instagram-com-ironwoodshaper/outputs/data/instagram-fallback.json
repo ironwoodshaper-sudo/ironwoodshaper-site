@@ -1,0 +1,34 @@
+[
+  {
+    "id": "fallback-process",
+    "imageUrl": "/assets/instagram/post-01.jpg",
+    "date": null,
+    "caption": "素材の表情を見極めながら、手仕事で仕上げる。",
+    "permalink": "https://www.instagram.com/ironwoodshaper/",
+    "mediaType": "IMAGE"
+  },
+  {
+    "id": "fallback-material-wood",
+    "imageUrl": "/assets/instagram/post-07.jpg",
+    "date": null,
+    "caption": "作品の起点となる、天然素材。",
+    "permalink": "https://www.instagram.com/ironwoodshaper/",
+    "mediaType": "IMAGE"
+  },
+  {
+    "id": "fallback-material-antler",
+    "imageUrl": "/assets/instagram/post-08.jpg",
+    "date": null,
+    "caption": "同じ形が二つとない素材を選ぶ。",
+    "permalink": "https://www.instagram.com/ironwoodshaper/",
+    "mediaType": "IMAGE"
+  },
+  {
+    "id": "fallback-antler-process",
+    "imageUrl": "/assets/instagram/post-04.jpg",
+    "date": null,
+    "caption": "鹿角と革。異なる素材を一つの形へ。",
+    "permalink": "https://www.instagram.com/ironwoodshaper/",
+    "mediaType": "IMAGE"
+  }
+]
