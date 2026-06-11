@@ -1,27 +1,5 @@
 {
   "version": 2,
   "cleanUrls": true,
-  "trailingSlash": false,
-  "routes": [
-    {
-      "src": "^/$",
-      "dest": "/outputs/index.html"
-    },
-    {
-      "src": "^/(styles\\.css|script\\.js)$",
-      "dest": "/outputs/$1"
-    },
-    {
-      "src": "^/assets/(.*)$",
-      "dest": "/outputs/assets/$1"
-    },
-    {
-      "src": "^/data/(.*)$",
-      "dest": "/outputs/data/$1"
-    },
-    {
-      "src": "^/api/instagram$",
-      "dest": "/api/instagram.js"
-    }
-  ]
+  "trailingSlash": false
 }

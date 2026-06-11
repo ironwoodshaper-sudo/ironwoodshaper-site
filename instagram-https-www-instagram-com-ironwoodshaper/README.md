@@ -5,10 +5,10 @@ Static website with a Vercel Function that loads the latest posts through Meta's
 ## Local preview
 
 ```sh
-python3 -m http.server 4173 --directory outputs
+python3 -m http.server 4173
 ```
 
-Opening `outputs/index.html` directly also works. In that mode, the manually registered Instagram fallback remains visible.
+Opening `index.html` directly also works. In that mode, the manually registered Instagram fallback remains visible.
 
 ## Instagram Graph API
 
@@ -29,14 +29,14 @@ The browser requests `/api/instagram`. The function:
 
 - requests image URL, thumbnail, date, caption, media type, and permalink;
 - caches successful responses for one hour at Vercel's edge;
-- returns `outputs/data/instagram-fallback.json` if credentials are missing or Meta is unavailable.
+- returns `data/instagram-fallback.json` if credentials are missing or Meta is unavailable.
 
 Do not commit `.env` or `.env.local`.
 
 ## Manual fallback
 
-Edit `outputs/data/instagram-fallback.json` and place local images under `outputs/assets/instagram/`.
+Edit `data/instagram-fallback.json` and place local images under `assets/instagram/`.
 
 ## Deploy
 
-Import the repository into Vercel and add the environment variables. `vercel.json` serves the static files from `outputs` while keeping `/api/instagram` as a Serverless Function.
+Import the repository into Vercel and add the environment variables. Vercel serves `index.html` and the static assets directly from the project root while keeping `/api/instagram` as a Serverless Function.

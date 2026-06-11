@@ -1,4 +1,4 @@
-const fallbackPosts = require("../outputs/data/instagram-fallback.json");
+const fallbackPosts = require("../data/instagram-fallback.json");
 
 const DEFAULT_LIMIT = 8;
 const GRAPH_VERSION = process.env.META_GRAPH_API_VERSION || "v23.0";
